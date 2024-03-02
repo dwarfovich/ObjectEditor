@@ -1,1 +1,1 @@
-#include "object_model_item_factory.hpp"
+#include "object_model_item_registrator.hpp"

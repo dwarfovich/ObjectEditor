@@ -93,6 +93,8 @@
     <ClCompile Include="objects_model.cpp" />
     <ClCompile Include="object_graphics_item.cpp" />
     <ClCompile Include="object_model_item.cpp" />
+    <ClCompile Include="object_model_item_registrator.cpp" />
+    <ClCompile Include="point_graphics_item.cpp" />
     <QtRcc Include="main_window.qrc" />
     <QtUic Include="main_window.ui" />
     <QtMoc Include="main_window.hpp" />
@@ -103,7 +105,8 @@
     <ClInclude Include="objects_model.hpp" />
     <ClInclude Include="object_graphics_item.hpp" />
     <ClInclude Include="object_model_item.hpp" />
-    <ClInclude Include="object_model_item_factory.hpp" />
+    <ClInclude Include="object_model_item_registrator.hpp" />
+    <ClInclude Include="point_graphics_item.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

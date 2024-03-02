@@ -1,12 +1,12 @@
 #pragma once
 
+#include "object_graphics_item.hpp"
+
 #include <QString>
 
 #include <memory>
 
 namespace bh {
-
-class ObjectGraphicsItem;
 
 class ObjectModelItem
 {
