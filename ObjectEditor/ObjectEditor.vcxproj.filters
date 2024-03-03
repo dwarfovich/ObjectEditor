@@ -58,6 +58,15 @@
     <ClCompile Include="point_graphics_item.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="standard_scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="object_view.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test_rect_item.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="objects_model.hpp">
@@ -75,5 +84,19 @@
     <ClInclude Include="point_graphics_item.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="standard_scene.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bh_graphics_item_type.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="test_rect_item.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="object_view.hpp">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
 </Project>

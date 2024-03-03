@@ -64,6 +64,12 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
   </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
     <ClCompile>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
@@ -94,7 +100,10 @@
     <ClCompile Include="object_graphics_item.cpp" />
     <ClCompile Include="object_model_item.cpp" />
     <ClCompile Include="object_model_item_registrator.cpp" />
+    <ClCompile Include="object_view.cpp" />
     <ClCompile Include="point_graphics_item.cpp" />
+    <ClCompile Include="standard_scene.cpp" />
+    <ClCompile Include="test_rect_item.cpp" />
     <QtRcc Include="main_window.qrc" />
     <QtUic Include="main_window.ui" />
     <QtMoc Include="main_window.hpp" />
@@ -102,11 +111,15 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="bh_graphics_item_type.h" />
     <ClInclude Include="objects_model.hpp" />
     <ClInclude Include="object_graphics_item.hpp" />
     <ClInclude Include="object_model_item.hpp" />
     <ClInclude Include="object_model_item_registrator.hpp" />
+    <ClInclude Include="test_rect_item.hpp" />
+    <QtMoc Include="object_view.hpp" />
     <ClInclude Include="point_graphics_item.hpp" />
+    <ClInclude Include="standard_scene.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
